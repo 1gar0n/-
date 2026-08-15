@@ -1,4 +1,4 @@
-import discord
+import discord 
 from discord.ext import commands
 import re
 
@@ -100,4 +100,4 @@ async def on_member_update(before: discord.Member, after: discord.Member):
                 print(f"오류 발생: {e}")
 
 # ⚠️ 여기에 발급받으신 봇 토큰을 붙여넣어 주세요!
-bot.run('MTUzODE1MjU1MjI3NTkxMDcxNg.GE6YPX.gpgpC-A6iOYnoqLAttwTYMGYFcFQsWBGrfJ7pM')
+bot.run(os.getenv('DISCORD_TOKEN'))
